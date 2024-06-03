@@ -1,0 +1,54 @@
+/* .grid-cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.grid-cell.merged {
+  padding: 1px;
+  background-color: #d0e1ff;
+  border: none;
+  position: relative;
+}
+
+.grid-cell.selected {
+  background-color: bisque;
+  border: 1px solid black;
+}
+
+.cell-content {
+  text-align: center;
+} */
+
+.grid-cell {
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-cell.merged {
+  background-size: cover;
+  background-position: center;
+}
+
+.selected {
+  background-color: rgba(0, 123, 255, 0.25);
+}
+
+@media (max-width:576px) {
+  .grid-cell {
+    width: 40px;
+    height: 40px;
+  }
+}

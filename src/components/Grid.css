@@ -1,0 +1,10 @@
+/* src/components/Grid.css */
+.grid {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid-row {
+    display: flex;
+  }
+  

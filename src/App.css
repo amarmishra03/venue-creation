@@ -1,0 +1,43 @@
+.app {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+.grid-container {
+  flex-grow: 1;
+  transition: margin-left 0.3s;
+}
+
+.grid-container.sidebar-open {
+  margin-left: 200px;
+  /* Adjust according to sidebar width */
+}
+
+.grid-container.sidebar-closed {
+  margin-left: 0;
+}
+
+.confirm-button-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media (min-width:576px) {
+  .mobile-view {
+    display: none;
+  }
+}
+
+@media (max-width:576px) {
+
+  .app {
+    flex-direction: column;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+}

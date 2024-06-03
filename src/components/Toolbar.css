@@ -1,0 +1,80 @@
+/* src/components/Toolbar.css */
+/* .toolbar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.toolbar-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin-right: 5px;
+  position: relative;
+}
+
+.toolbar-item.selected {
+  border-color: black;
+  font-weight: bold;
+}
+
+.tick {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: green;
+} */
+
+.toolbar {
+  width: 200px;
+  background-color: #004EA9;
+  border-right: 1px solid #ccc;
+  color: white;
+  font-weight: bolder;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.toolbar.closed {
+  transform: translateX(-100%);
+}
+
+.toolbar-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.toolbar-item.selected {
+  background-color: #FE0248;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 50%;
+  right: -15px; /* Adjust to control how much of the button peeks out */
+  transform: translateY(-50%);
+  width: 70px;
+  height: 60px;
+  background-color: #004EA9;
+  color: white;
+  border-right: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bolder;
+}
+
+.toggle-button:hover {
+  background-color: #035dc5;
+}
+
+.toolbar.open .toggle-button {
+  right: -35px;
+}
+
+.toolbar.closed .toggle-button {
+  right: -50px;
+}
